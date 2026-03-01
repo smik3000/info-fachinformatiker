@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fachinformatiker - Berufsinformation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>💻 Fachinformatiker</h1>
+    <p>Entdecke einen vielfältigen IT-Beruf mit großen Perspektiven</p>
+    <button id="darkModeToggle">Dark Mode</button>
+  </header>
+
+  <nav class="nav-tabs">
+    <button class="nav-btn active" data-section="overview">Überblick</button>
+    <button class="nav-btn" data-section="specializations">Spezialisierungen</button>
+    <button class="nav-btn" data-section="requirements">Anforderungen</button>
+    <button class="nav-btn" data-section="career">Karrierepfad</button>
+    <button class="nav-btn" data-section="quiz">Quiz</button>
+  </nav>
+
+  <main>
+    <!-- Überblick -->
+    <section id="overview" class="content-section active">
+      <h2>Was ist ein Fachinformatiker?</h2>
+      <p>Ein Fachinformatiker ist ein IT-Fachmann, der sich auf die Planung, Entwicklung und Verwaltung von Informatiksystemen spezialisiert hat. Es ist ein anerkannter Ausbildungsberuf mit vielen Spezialisierungsmöglichkeiten.</p>
+      
+      <div class="info-box">
+        <h3>📚 Ausbildungsdauer</h3>
+        <p>3 Jahre (Duale Berufsausbildung)</p>
+      </div>
+
+      <div class="info-box">
+        <h3>💰 Durchschnittliches Einkommen</h3>
+        <p>Ausbildung: 800-1.000€ | Einstieg: 2.500-3.500€ | Erfahren: 4.000-6.000€+</p>
+      </div>
+
+      <div class="info-box">
+        <h3>🎯 Hauptaufgaben</h3>
+        <ul class="ddd">
+          <li>Softwareentwicklung und Programmierung</li>
+          <li>Systemadministration und Netzwerkmanagement</li>
+          <li>Datenbankenverwaltung</li>
+          <li>Technischer Support und Troubleshooting</li>
+          <li>IT-Sicherheit und Datenschutz</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Spezialisierungen -->
+    <section id="specializations" class="content-section">
+      <h2>Spezialisierungsrichtungen</h2>
+      <p>Fachinformatiker können sich auf verschiedene Bereiche spezialisieren:</p>
+
+      <div class="spec-toggle">
+        <button class="toggle-btn" data-spec="anwendungsentwicklung">
+          📱 Anwendungsentwicklung
+        </button>
+        <div id="anwendungsentwicklung" class="spec-content hidden">
+          <h4>Anwendungsentwicklung</h4>
+          <p>Spezialist für die Entwicklung von Software und Anwendungen</p>
+          <ul>
+            <li>Programmierung in verschiedenen Sprachen (Java, Python, C++, etc.)</li>
+            <li>Web- und Mobile-Apps entwickeln</li>
+            <li>Softwarearchitektur und Design Patterns</li>
+            <li>Testing und Qualitätssicherung</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-toggle">
+        <button class="toggle-btn" data-spec="systemintegration">
+          🔧 Systemintegration
+        </button>
+        <div id="systemintegration" class="spec-content hidden">
+          <h4>Systemintegration</h4>
+          <p>Spezialist für IT-Infrastruktur und Systemverwaltung</p>
+          <ul>
+            <li>Netzwerk- und Serveradministration</li>
+            <li>IT-Sicherheit und Firewalls</li>
+            <li>Backup und Disaster Recovery</li>
+            <li>Hardware-Management und Installation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-toggle">
+        <button class="toggle-btn" data-spec="datenbanken">
+          🗄️ Datenbanken
+        </button>
+        <div id="datenbanken" class="spec-content hidden">
+          <h4>Datenbankentwicklung</h4>
+          <p>Spezialist für Datenverwaltung und -analyse</p>
+          <ul>
+            <li>SQL und NoSQL Datenbanken</li>
+            <li>Datenbankdesign und -optimierung</li>
+            <li>Data Warehousing</li>
+            <li>Backup und Wiederherstellung</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anforderungen -->
+    <section id="requirements" class="content-section">
+      <h2>Anforderungen & Fähigkeiten</h2>
+      
+      <h3>Technische Fähigkeiten</h3>
+      <div class="skill-list">
+        <div class="skill-item">
+          <span>Programmierung</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Netzwerke</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Betriebssysteme</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Datenbanken</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+        </div>
+      </div>
+
+      <h3>Persönliche Eigenschaften</h3>
+      <ul>
+        <li>✅ Logisches Denkvermögen</li>
+        <li>✅ Problemlösungsfähigkeit</li>
+        <li>✅ Geduld und Aufmerksamkeit für Details</li>
+        <li>✅ Kommunikationsfähigkeit</li>
+        <li>✅ Kontinuierliches Lernvermögen</li>
+      </ul>
+
+      <h3>Schulische Voraussetzungen</h3>
+      <p>Idealerweise: Mittlere Reife oder Abitur, gute Noten in Mathematik und Informatik</p>
+    </section>
+
+    <!-- Karrierepfad -->
+    <section id="career" class="content-section">
+      <h2>Karrierepfad & Perspektiven</h2>
+      
+      <div class="career-path">
+        <div class="career-step">
+          <h4>Ausbildung</h4>
+          <p>3 Jahre Duale Ausbildung</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="career-step">
+          <h4>Junior Dev/Admin</h4>
+          <p>1-2 Jahre Einstiegserfahrung</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="career-step">
+          <h4>Senior/Spezialist</h4>
+          <p>3-5+ Jahre Erfahrung</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="career-step">
+          <h4>Führung/Architektur</h4>
+          <p>Teamleitung oder IT-Architektur</p>
+        </div>
+      </div>
+
+      <h3>Weitere Entwicklungsmöglichkeiten</h3>
+      <ul>
+        <li>Weiterbildung zum Techniker (2 Jahre)</li>
+        <li>Master-Studium (2 Jahre)</li>
+        <li>Spezialisierungen (Zertifikate: AWS, Azure, Cisco, etc.)</li>
+        <li>Selbstständigkeit/Freelancing</li>
+      </ul>
+
+      <h3>Arbeitgeber</h3>
+      <p>Fachinformatiker sind in nahezu allen Branchen gefragt:</p>
+      <ul>
+        <li>IT-Unternehmen</li>
+        <li>Banken und Versicherungen</li>
+        <li>Industrie und Produktion</li>
+        <li>E-Commerce und Startups</li>
+        <li>Behörden und öffentliche Dienste</li>
+      </ul>
+    </section>
+
+    <!-- Quiz -->
+  
+<section id="quiz" class="content-section">
+  <h2>Fachinformatiker-Quiz</h2>
+  <p>Teste Dein Wissen! Welche Aussagen stimmen?</p>
+
+  <div class="quiz-container">
+
+    <div class="quiz-question" data-question="1">
+      <p><strong>1. Ein Fachinformatiker arbeitet oft im Team?</strong></p>
+      <button class="quiz-option" data-answer="true">✓ Richtig</button>
+      <button class="quiz-option" data-answer="false">✗ Falsch</button>
+    </div>
+
+    <div class="quiz-question" data-question="2">
+      <p><strong>2. Fachinformatiker müssen keine Kunden beraten?</strong></p>
+      <button class="quiz-option" data-answer="false">✓ Richtig</button>
+      <button class="quiz-option" data-answer="true">✗ Falsch</button>
+    </div>
+
+    <div class="quiz-question" data-question="3">
+      <p><strong>3. Es gibt die Fachrichtung Anwendungsentwicklung?</strong></p>
+      <button class="quiz-option" data-answer="true">✓ Richtig</button>
+      <button class="quiz-option" data-answer="false">✗ Falsch</button>
+    </div>
+
+    <div class="quiz-question" data-question="4">
+      <p><strong>4. Ein Fachinformatiker installiert und wartet IT-Systeme?</strong></p>
+      <button class="quiz-option" data-answer="true">✓ Richtig</button>
+      <button class="quiz-option" data-answer="false">✗ Falsch</button>
+    </div>
+
+    <div class="quiz-question" data-question="5">
+      <p><strong>5. Mathematik und logisches Denken sind unwichtig?</strong></p>
+      <button class="quiz-option" data-answer="false">✓ Richtig</button>
+      <button class="quiz-option" data-answer="true">✗ Falsch</button>
+    </div>
+
+    <div class="quiz-question" data-question="6">
+      <p><strong>6. Die Ausbildung ist eine duale Ausbildung?</strong></p>
+      <button class="quiz-option" data-answer="true">✓ Richtig</button>
+      <button class="quiz-option" data-answer="false">✗ Falsch</button>
+    </div>
+
+  </div>
+
+  <button id="checkBtn">Quiz prüfen</button>
+  <button id="resetBtn">Zurücksetzen</button>
+
+  <p id="finalResult"></p>
+</section>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Fachinformatiker Informationsportal | Made by Maksims Slusenkovs</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
