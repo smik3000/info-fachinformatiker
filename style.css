@@ -692,3 +692,83 @@ body.dark-mode #darkModeToggle {
   background: linear-gradient(135deg, #27ae60, #2ecc71);
   color: #ffffff;
 }
+/* ========================= */
+/* 📱 HANDY OPTIMIERUNG */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+  /* Header kleiner */
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  /* Navigation untereinander */
+  nav.nav-tabs {
+    flex-direction: column;
+  }
+
+  .nav-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+
+  /* Content kompakter */
+  main {
+    margin: 1rem auto;
+    padding: 0 0.8rem;
+  }
+
+  .content-section {
+    padding: 1rem;
+  }
+
+  .content-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .content-section h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Karrierepfad untereinander */
+  .career-path {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  /* Quiz Buttons untereinander */
+  .quiz-option {
+    width: 100%;
+    margin: 0.4rem 0;
+  }
+
+  #checkBtn,
+  #resetBtn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* Dark Mode Button kleiner + fix */
+  #darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+}
